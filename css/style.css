@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-}
-
 a {
   text-decoration: none;
 }
@@ -14,12 +10,6 @@ a {
   text-align: center;
 }
 
-.container {
-  width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .top-wrapper h1 {
   opacity: 0.7;
   font-size: 45px;
@@ -30,13 +20,16 @@ a {
   opacity: 0.7;
   font-size: 14px;
 }
-
-
+section {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
 header {
   height: 65px;
   width: 100%;
   background-color: rgba(34,49,52,0.9);
   position: fixed;
+  z-index: 9999;
 }
 
 .logo {
@@ -80,26 +73,19 @@ header {
 }
 
 h2{
+  margin: 60px 0;
   text-align: center;
   font-weight: normal;
   font-size: 48px;
 }
 
-.content{
-  width: 80%;
+#philosophy .content{
   border: 1px solid #DDD;
-  margin: 60px auto;
-  margin-bottom: 100px;
 }
-.content p{
+#philosophy .content p{
   padding: 30px 30px;
   text-align: center;
   font-weight: normal;
-}
-
-.members{
-  margin: 0 auto;
-  font-size: 0;
 }
 
 .img-member{
@@ -135,25 +121,3 @@ footer {
   color: white;
   text-align: center;
 }
-
-
-/*
-.members{
-  width: 90%;
-  margin: 0 auto;
-}
-.member{
-  float: left;
-  width: 22%;
-  text-align: center;
-  border: 1px solid #DDD;
-  margin: 0 1%;
-}
-
-.text-content{
-  display: inline-block;
-  font-size: 14px;
-  padding: 30px 30px;
-  text-align: center;
-  font-weight: normal;
-}*/
