@@ -1,7 +1,10 @@
 a {
   text-decoration: none;
 }
-
+img{
+  max-width: 100%;
+  height: auto;
+}
 .top-wrapper {
   padding: 180px 0 180px 0;
   background-image: url(../images/top-header.jpg);
@@ -25,30 +28,31 @@ section {
   margin-bottom: 60px;
 }
 header {
-  height: 65px;
   width: 100%;
   background-color: rgba(34,49,52,0.9);
   position: fixed;
   z-index: 9999;
 }
-
+header:after{
+  display: block;
+  content: "";
+  clear: both;
+}
 .logo {
   width: 124px;
   margin-top: 10px;
+  margin-bottom: 10px;
   color: white;
 }
-
-.logo h1{
-  display: block;
+.logo img{
+  width: 124px;
 }
-
 .header-left {
   float: left;
 }
 
 .header-right {
   float: right;
-  background-color: rgba(255,255,255,0.3);
   transition: all 0.5s;
 }
 .header-right ul{
@@ -57,19 +61,32 @@ header {
   list-style: none;
 }
 .header-right ul li{
+  font-size: 24px;
   float: left;
   padding: 0;
-  margin: 0;
+  margin: 4px;
+  width: 65px;
+  display: block;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
 }
 .header-right li:hover {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.2);
+  -webkit-animation: scale .3s ease-in-out;
+  animation: scale .3s ease-in-out;
 }
 
 .header-right a {
   line-height: 65px;
-  padding: 0 25px;
   color: white;
   display: block;
+}
+@-webkit-keyframes scale {
+  50% { -webkit-transform: scale(1.1); }
+}
+@keyframes scale {
+  50% { transform: scale(1.1); }
 }
 
 h2{
